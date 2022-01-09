@@ -1,0 +1,21 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-maintenance-notification-reads/SAP_API_Caller/caller.go#L67",
+	"function": "sap-api-integrations-maintenance-notification-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": [
+		{
+			"MaintenanceNotification": "10000020",
+			"MaintenanceNotificationItem": "1",
+			"MaintenanceNotificationCause": "1",
+			"MaintNotifCauseText": "",
+			"MaintNotifCauseCodeGroup": "YB-PMME1",
+			"MaintNotifCauseCodeGroupName": "Causes mechanical",
+			"MaintNotificationCauseCode": "ME03",
+			"MaintNotificationCauseCodeName": "Breakage",
+			"MaintNotificationRootCause": "",
+			"MaintNotificationRootCauseText": "No",
+			"IsDeleted": false
+		}
+	],
+	"time": "2021-12-25T13:13:58.972965+09:00"
+}

@@ -1,0 +1,23 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-maintenance-notification-reads/SAP_API_Caller/caller.go#L60",
+	"function": "sap-api-integrations-maintenance-notification-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": [
+		{
+			"MaintenanceNotification": "10000020",
+			"MaintenanceNotificationItem": "1",
+			"MaintNotifItemText": "",
+			"MaintNotifDamageCodeGroup": "YB-PMME1",
+			"MaintNotifDamageCodeGroupName": "Damages mechanical",
+			"MaintNotificationDamageCode": "ME00",
+			"MaintNotifDamageCodeName": "Breakage",
+			"MaintNotifObjPrtCodeGroup": "YB-PMME1",
+			"MaintNotifObjPrtCodeGroupName": "Object parts mechanical",
+			"MaintNotifObjPrtCode": "ME00",
+			"MaintNotifObjPrtCodeName": "Shaft",
+			"IsDeleted": false,
+			"to_ItemCause": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_MAINTNOTIFICATION/MaintenanceNotificationItem(MaintenanceNotification='10000020',MaintenanceNotificationItem='1')/to_ItemCause"
+		}
+	],
+	"time": "2021-12-25T13:13:58.228408+09:00"
+}
