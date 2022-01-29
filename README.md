@@ -122,14 +122,14 @@ func (c *SAPAPICaller) AsyncGetMaintenanceNotification(maintenanceNotification s
 
 ```
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 保全通知 の ヘッダデータ が取得された結果の JSON の例です。  
 以下の項目のうち、"MaintenanceNotification" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-maintenance-notification-reads-rmq-kube/SAP_API_Caller/caller.go#L53",
-	"function": "sap-api-integrations-maintenance-notification-reads-rmq-kube/SAP_API_Caller.(*SAPAPICaller).Header",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-maintenance-notification-reads/SAP_API_Caller/caller.go#L53",
+	"function": "sap-api-integrations-maintenance-notification-reads/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
 	"message": [
 		{
@@ -141,28 +141,28 @@ func (c *SAPAPICaller) AsyncGetMaintenanceNotification(maintenanceNotification s
 			"NotifProcessingPhase": "1",
 			"NotifProcessingPhaseDesc": "Outstanding",
 			"MaintPriorityDesc": "",
-			"CreationDate": "/Date(1542758400000)/",
+			"CreationDate": "2018-11-21T09:00:00+09:00",
 			"LastChangeTime": "PT11H50M49S",
-			"LastChangeDate": "/Date(1542758400000)/",
-			"LastChangeDateTime": "/Date(1542801052000+0000)/",
+			"LastChangeDate": "2018-11-21T09:00:00+09:00",
+			"LastChangeDateTime": "",
 			"CreationTime": "PT11H50M49S",
 			"ReportedByUser": "CB9980000726",
 			"ReporterFullName": "CB9980000726",
 			"PersonResponsible": "",
 			"MalfunctionEffect": "",
 			"MalfunctionEffectText": "",
-			"MalfunctionStartDate": "/Date(1511222400000)/",
+			"MalfunctionStartDate": "2017-11-21T09:00:00+09:00",
 			"MalfunctionStartTime": "PT11H43M53S",
-			"MalfunctionEndDate": "/Date(1511395200000)/",
+			"MalfunctionEndDate": "2017-11-23T09:00:00+09:00",
 			"MalfunctionEndTime": "PT11H43M53S",
 			"MaintNotificationCatalog": "D",
 			"MaintNotificationCode": "",
 			"MaintNotificationCodeGroup": "",
 			"CatalogProfile": "YB-PM0003",
-			"NotificationCreationDate": "/Date(1542758400000)/",
+			"NotificationCreationDate": "2018-11-21T09:00:00+09:00",
 			"NotificationCreationTime": "PT11H43M53S",
 			"NotificationTimeZone": "UTC",
-			"RequiredStartDate": "/Date(1542758400000)/",
+			"RequiredStartDate": "2018-11-21T09:00:00+09:00",
 			"RequiredStartTime": "PT11H43M53S",
 			"RequiredEndDate": "",
 			"RequiredEndTime": "PT00H00M00S",
@@ -212,7 +212,7 @@ func (c *SAPAPICaller) AsyncGetMaintenanceNotification(maintenanceNotification s
 			"TaskListGroupCounter": "",
 			"MaintenancePlanCallNumber": 0,
 			"MaintenanceTaskListType": "",
-			"NotificationReferenceDate": "/Date(1542758400000)/",
+			"NotificationReferenceDate": "2018-11-21T09:00:00+09:00",
 			"NotificationReferenceTime": "PT11H50M49S",
 			"NotificationCompletionDate": "",
 			"CompletionTime": "PT00H00M00S",
@@ -230,6 +230,6 @@ func (c *SAPAPICaller) AsyncGetMaintenanceNotification(maintenanceNotification s
 			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_MAINTNOTIFICATION/MaintenanceNotification('10000020')/to_Item"
 		}
 	],
-	"time": "2021-12-25T13:13:55.845258+09:00"
+	"time": "2022-01-28T17:20:39+09:00"
 }
 ```
