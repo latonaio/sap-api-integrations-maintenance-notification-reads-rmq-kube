@@ -71,4 +71,4 @@ spec:
       port: 8080
       protocol: TCP
       targetPort: 8080
-      nodePort: 30516
+      nodePort: 30576
